@@ -1,3 +1,3 @@
 # JavascriptPracticeAssignment
 
-Assignment questions based on javascript.
+Assignment questions on javascript.
