@@ -1,0 +1,30 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+        function is_1st_jan_sunday_between_2014_and_2050(year){
+            var month = 1;
+            var date = 1;
+
+            sunday_years = [];
+            for(year = 2014; year <= 2050; year++) {
+                var jan1st = new Date(year, month, date);
+                if(jan1st.getDay()==0)
+                sunday_years.push(year);
+              
+            }   
+            if(sunday_years.length)
+            return sunday_years;
+
+            return false;
+        }
+
+        var year = is_1st_jan_sunday_between_2014_and_2050();
+        var sunday = year.length ? " is" : " is not";
+        document.write("1st January " + sunday + " being a sunday between 2014 and 2050");
+        if(year.length)
+        document.write(" on years " + year);
+    </script>      
+         
+   </body>
+</html>

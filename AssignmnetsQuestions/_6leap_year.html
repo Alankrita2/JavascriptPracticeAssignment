@@ -1,0 +1,15 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+        function is_gregorian_leap_year(year){
+           return( !(year%4) && !(year%100) && !(year%400));
+        }
+
+        var year = 4000;
+        var leap_greg = is_gregorian_leap_year(year) ? " is" : " is not";
+        document.write("The year " + year + leap_greg + " leap year in Gregorian calender.");
+    </script>      
+         
+   </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+         var str = "w3resource";
+
+         var rotate = setInterval(() =>{
+             rotate_right()}, 100);
+
+         function rotate_right(){
+            
+            var strNode = str;
+            document.write(strNode+"<br/>");
+            str = str[str.length - 1] + str.substring(0, str.length - 1);            
+         }
+
+         setTimeout(stopInterval, 3100);
+         function stopInterval(){
+          clearInterval(rotate);
+        }
+
+    </script>      
+         
+   </body>
+</html>

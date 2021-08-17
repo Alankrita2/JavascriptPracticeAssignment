@@ -1,0 +1,22 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+        function remove_char_at_specified_position(str, pos){
+           str = str.substr(0,pos)+str.substr(pos+1);
+
+           return str;
+        }
+
+        
+        let str = prompt("Enter any string : ");
+        let pos = parseInt(prompt("Enter any string : "));
+
+        var result = remove_char_at_specified_position(str, pos);
+
+        document.write("The resultant string is : "+ result);
+        
+    </script>      
+         
+   </body>
+</html>

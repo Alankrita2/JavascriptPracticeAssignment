@@ -1,0 +1,17 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+        function is_within_20_of_100_or_400(num){
+          return(Math.abs(num-100) < 20 || Math.abs(num-400) < 20);
+        }
+
+        let num = parseInt(prompt("Enter any number : "));
+        var result = is_within_20_of_100_or_400(num)? " is" : " is not";
+
+        document.write(num + result + " within 20 of 100 or 400" );
+        
+    </script>      
+         
+   </body>
+</html>

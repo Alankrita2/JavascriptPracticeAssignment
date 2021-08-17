@@ -1,0 +1,20 @@
+<html>
+
+   <body>
+    <script type = "text/javascript">
+        function one_positive_other_negative(num1, num2){
+          return((num1<0 && num2>0)|| (num1>0 && num2<0));
+        }
+
+        
+        let num1 = parseInt(prompt("Enter any number : "));
+        let num2 = parseInt(prompt("Enter any number : "));
+
+        var result = one_positive_other_negative(num1, num2)? " is" : " is not";
+
+        document.write("When one number is postive other"+ result + " negative");
+        
+    </script>      
+         
+   </body>
+</html>
